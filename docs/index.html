@@ -39,7 +39,7 @@
             >Portfolio</span
           >
         </a>
-        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+        <div class="flex md:order-2 space-x-3 md:space-x-2 rtl:space-x-reverse">
           <!-- add linkedin, mail en github -->
           <a href="https://www.linkedin.com/in/thomas-deboel-9b5819196/"
             ><img
@@ -47,14 +47,20 @@
               alt="link to github"
               width="36px"
             />
-          </a>
-          <a href="https://github.com/ThomasDeboel">
-            <img
-              src="img/github-mark.png"
-              alt="link to linkedin"
-              width="36px"
-            />
-          </a>
+            <a href="https://github.com/ThomasDeboel">
+              <img
+                src="img/github-mark.png"
+                alt="link to Github"
+                width="36px"
+                class="inline dark:hidden"
+              />
+              <img
+                src="img/github-mark-white.png"
+                alt="Link to Github"
+                width="36px"
+                class="hidden dark:inline"
+              />
+            </a>
 
           <button
             data-collapse-toggle="navbar-sticky"
