@@ -28,19 +28,12 @@
         class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
       >
         <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-          <!-- <img
-            src="https://flowbite.com/docs/images/logo.svg"
-            class="h-8"
-            alt="Flowbite Logo"
-            width="32px"
-          /> -->
           <span
             class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
             >Portfolio</span
           >
         </a>
         <div class="flex md:order-2 space-x-3 md:space-x-2 rtl:space-x-reverse">
-          <!-- add linkedin, mail en github -->
           <a href="https://www.linkedin.com/in/thomas-deboel-9b5819196/"
             ><img
               src="img/In-Blue-96@2x.png"
@@ -117,13 +110,6 @@
                 >Projects
               </a>
             </li>
-            <!-- <li>
-              <a
-                href="#"
-                class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                >About </a
-              >
-            </li> -->
           </ul>
         </div>
       </div>
@@ -198,7 +184,7 @@
                   class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600"
                 >
                   <h3 class="text-xl font-medium text-gray-900 dark:text-white">
-                    Extra Large modal
+                    Student card reader
                   </h3>
                   <button
                     type="button"
@@ -228,57 +214,94 @@
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
+                    Our goal was to create a simple badge-in system using
+                    student cards. We built a device with a Raspberry Pi, RFID
+                    reader, and LCD screen. The Raspberry Pi sends card data to
+                    an API for name retrieval and exam eligibility check. A USB
+                    camera captures a photo for facial recognition, and the
+                    system logs check-in dates to a central database via the
+                    API. Successful check-ins trigger automated email
+                    confirmations to students. We also developed a web interface
+                    for teachers to access student info and exam attendance
+                    status efficiently.
                   </p>
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
+                    My contribution was with the Python code for the Orange Pi,
+                    i wrote the code to read the RFID card and send the data to
+                    the API. I also wrote the code to take a picture with the
+                    camera and send it to the API. The api was also written in
+                    Python and was used to store the existing students and al
+                    the exams in. The pictures that were taken were never stored
+                    and only send to the API for facial recognition.
                   </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
+
+                  <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                      <h3
+                        class="text-lg font-medium text-gray-500 dark:text-gray-400"
+                      >
+                        Team members
+                      </h3>
+                      <p class="text-gray-500 dark:text-gray-400">
+                        I worked together with:
+                      </p>
+
+                      <ul
+                        class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+                      >
+                        <li>Anthony Van Roy</li>
+                        <li>Bryan Poleunis</li>
+                        <li>Thomas Deboel</li>
+                        <li>Michiel Kuyken</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3
+                        class="text-lg font-medium text-gray-500 dark:text-gray-400"
+                      >
+                        Technologies
+                      </h3>
+                      <p class="text-gray-500 dark:text-gray-400">
+                        The technologies that were used:
+                      </p>
+
+                      <ul
+                        class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+                      >
+                        <li>Python</li>
+                        <li>Flask</li>
+                        <li>Orange Pi</li>
+                        <li>RFID reader</li>
+                        <li>Camera</li>
+                        <li>AI</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/MichielKuyken/AH1_checkin_website"
+                        ><button
+                          type="button"
+                          class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                        >
+                          <h2 class="text-white font-bold text-xl">
+                            Link to sourcecode website
+                          </h2>
+                        </button></a
+                      >
+                      <a href="https://github.com/r0901651/Projectweek-AH1"
+                        ><button
+                          type="button"
+                          class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                        >
+                          <h2 class="text-white font-bold text-xl">
+                            Link to sourcecode Python
+                          </h2>
+                        </button></a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -289,7 +312,7 @@
             class="overflow-hidden rounded-lg border border-gray-100 bg-white shadow-sm m-5 space-x-5"
           >
             <img
-              alt=""
+              alt="Foto of a our servers"
               src="img/server1.jpg"
               class="h-56 w-full object-cover"
             />
@@ -368,57 +391,89 @@
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
+                    Our goal is to create a platform where developers can host
+                    their projects. We will provide a simple interface where
+                    developers can upload their projects and share them with the
+                    world. We will also provide a way for developers to give
+                    feedback on our hosting platform.
                   </p>
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
+                  ></p>
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
+                    We are currently working on the project and the parts that i
+                    am working on are the hardware and the firewall.
                   </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
+                  <div class="grid md:grid-cols-3 gap-8">
+                    <div>
+                      <h3
+                        class="text-lg font-medium text-gray-500 dark:text-gray-400"
+                      >
+                        Team members
+                      </h3>
+                      <p class="text-gray-500 dark:text-gray-400">
+                        I worked together with:
+                      </p>
+
+                      <ul
+                        class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+                      >
+                        <li>Aleksander Baum</li>
+                        <li>Baisangur Dudayev</li>
+                        <li>Thomas Deboel</li>
+                        <li>Brent Wouters</li>
+                        <li>Quinten Van der Wildt</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <h3
+                        class="text-lg font-medium text-gray-500 dark:text-gray-400"
+                      >
+                        Technologies
+                      </h3>
+                      <p class="text-gray-500 dark:text-gray-400">
+                        The technologies that were used:
+                      </p>
+
+                      <ul
+                        class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+                      >
+                        <li>pfsense</li>
+                        <li>Html</li>
+                        <li>Vsphere</li>
+                        <li>Vcenter</li>
+                        <li>kubernetes</li>
+                        <li>Rancher</li>
+                        <li>...</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a
+                        href="https://github.com/AleksanderBaum/frontend-hosting"
+                        ><button
+                          type="button"
+                          class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                        >
+                          <h2 class="text-white font-bold text-xl">
+                            Link to sourcecode website
+                          </h2>
+                        </button></a
+                      >
+                      <a href="#">
+                        <button
+                          type="button"
+                          disabled
+                          class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                        >
+                          <h2 class="text-white font-bold text-xl">
+                            Link to sourcecode API
+                          </h2>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -509,57 +564,43 @@
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
+                    The goal of this project was to give a basic 3D printer a
+                    way to connect to the internet and have it monitored 24/7. I
+                    used a old laptop to connect the printer to the internet and
+                    a webcam to monitor the print. I also added a way to control
+                    the printer remotly and added the option to send a text
+                    message over discord when the print is done.
                   </p>
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
+                    I use existing software to control the printer and use
+                    ubuntu to run it. I also used a discord bot to send the
+                    message when the print is done. The webcam is connected to
+                    the laptop and the laptop is connected to the printer. The
+                    laptop is also connected to the internet so i can monitor
+                    the print from anywhere.
                   </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
+                  <div>
+                    <h3
+                      class="text-lg font-medium text-gray-500 dark:text-gray-400"
+                    >
+                      Technologies
+                    </h3>
+                    <p class="text-gray-500 dark:text-gray-400">
+                      The technologies that were used:
+                    </p>
+
+                    <ul
+                      class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+                    >
+                      <li>Ubuntu</li>
+                      <li>Discord API</li>
+                      <li>Octoprint</li>
+                      <li>klipper</li>
+                      <li>...</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
@@ -647,57 +688,59 @@
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
+                    This project is about managing and tracking video games and
+                    the platforms on which they were purchased. The API allows
+                    you to create, read, update, and delete game and platform
+                    data. The API is written in Python and uses Fast api to run.
                   </p>
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
+                    I made the api myself and used the course material to fall
+                    back on.
                   </p>
                   <p
                     class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
                   >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
+                    In the future I will add a frontend to the api so that it
+                    can more easely used. I will also try to incorperate the api
+                    from Steam and other game platforms so that the api can be
+                    used to track all the games that you own.
                   </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    With less than a month to go before the European Union
-                    enacts new consumer privacy laws for its citizens, companies
-                    around the world are updating their terms of service
-                    agreements to comply.
-                  </p>
-                  <p
-                    class="text-base leading-relaxed text-gray-500 dark:text-gray-400"
-                  >
-                    The European Union’s General Data Protection Regulation
-                    (G.D.P.R.) goes into effect on May 25 and is meant to ensure
-                    a common set of data rights in the European Union. It
-                    requires organizations to notify users as soon as possible
-                    of high-risk data breaches that could personally affect
-                    them.
-                  </p>
+                  <div class="grid md:grid-cols-3 gap-8">
+                    <div class="col-span-2">
+                      <h3
+                        class="text-lg font-medium text-gray-500 dark:text-gray-400"
+                      >
+                        Technologies
+                      </h3>
+                      <p class="text-gray-500 dark:text-gray-400">
+                        The technologies that were used:
+                      </p>
+
+                      <ul
+                        class="max-w-md space-y-1 text-gray-500 list-disc list-inside dark:text-gray-400"
+                      >
+                        <li>Fastapi</li>
+                        <li>Python</li>
+                        <li>Html</li>
+                        <li>Docker</li>
+                        <li>...</li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a href="https://github.com/ThomasDeboel/basisprojectApi"
+                        ><button
+                          type="button"
+                          class="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+                        >
+                          <h2 class="text-white font-bold text-xl">
+                            Link to sourcecode Python
+                          </h2>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -705,8 +748,6 @@
         </div>
       </div>
     </main>
-    <!-- change the "found out more" put in the projects -->
-
     <!-- script -->
     <script src="flowbite.min.js"></script>
   </body>
